@@ -32,7 +32,7 @@ public class UserController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return RedirectToAction("Index");
+            return View("Index");
 
         }
         PasswordHasher<User> hasher = new();
