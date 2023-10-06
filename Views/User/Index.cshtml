@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center row">
+    <div class="col-6">
+        @await Html.PartialAsync("_Register", new User())
+    </div>
+    <div class="col-6">
+        @await Html.PartialAsync("_Login", new LogUser())
+    </div>
+</div>
